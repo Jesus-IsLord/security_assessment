@@ -1,0 +1,231 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Ebenezer Tseh} \\ \vspace{1pt}
+    \small (857)-756-3208 $|$ \href{mailto:ebenezertseh@college.harvard.edu}{\underline{ebenezertseh@college.harvard.edu}} $|$
+    \href{https://linkedin.com/in/ebenezer-tseh-3b9a03200/}{\underline{linkedin.com/in/Ebenezer}} $|$
+    \href{https://github.com/Tsehben}{\underline{github.com/Tsehben}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harvard University}{Cambridge, MA}
+      {Bachelor's Degree, Computer Science}{August 2023 -- May 2027}
+       \resumeItemListStart
+        \resumeItem{Relevant Coursework: Introduction to Computer Science (CS50), Discrete Mathematics (CS20)}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer Intern}{June 2022 - August 2022}
+      {Vodafone}{Accra, Ghana}
+      \resumeItemListStart
+        \resumeItem{Quickly acquired proficiency in Dart programming and Flutter framework and collaborated with a team of interns to develop Vodafone app's chatbot feature.}
+        \resumeItem{Guided by senior engineers, I implemented efficient algorithm designs and streamlined database queries, resulting in a 30\% reduction in application load times.}
+
+      \resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer Intern}{June 2021 - August 2021}
+      {Npontu Technologies}{Accra, Ghana}
+      \resumeItemListStart
+        \resumeItem{Worked collaboratively with a team of 5 to create custom Kedebah ERP modules using Laravel.}
+        \resumeItem{Assisted in integrating third-party APIs and services, which enhanced my understanding of system scalability.}
+        \resumeItem{Engaged in cross-team collaboration, working closely with UI/UX designers, testers, and project managers for seamless interface integration.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PROJECTS \& OUTSIDE EXPERIENCE}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/Tsehben/Crimson_Mart}{\textcolor{blue}{\underline{\textbf{Crimson Mart}}}} $|$ \emph{Flask, SQL, JavaScript, Bootstrap}}{September 2023 - December 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a secure e-commerce platform for Harvard students, using Flask and SQL for backend operations, coupled with a robust front-end design employing HTML, CSS, JavaScript, and Bootstrap.}
+            \resumeItem{Designed a secure authentication system with encrypted password management and robust session controls, enhancing data security and user privacy.}
+            \resumeItem{Integrated core e-commerce features, such as product listings, shopping cart optimization, and a streamlined checkout process, significantly improving user engagement and efficiency.}
+
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\href{https://github.com/Kwakyecodes/Beta_Hustle}{\textcolor{blue}{\underline{\textbf{Beta Hustle}}}} $|$ \emph{Flutter, Dart, Firebase,}}{November 2020 - March 2021}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team of 6 to develop an innovative job matching application facilitating connections between employers and employees for short-term gigs.}
+            \resumeItem{Utilized Flutter's UI/UX capabilities to design and implement a user-friendly interface, significantly enhancing overall user experience and app usability.}
+            \resumeItem{Actively monitored and updated the app in line with Flutter best practices, resulting in a 25\% reduction in load times and ensuring a consistently smooth user experience.}
+
+          \resumeItemListEnd
+
+
+      \resumeProjectHeading
+          {\href{https://github.com/Tsehben/exeatlog/tree/master}{\textcolor{blue}{\underline{\textbf{Exeatlog}}}} $|$ \emph{PHP, MySQL, JavaScript, Bootstrap }}{May 2019 - December 2019}
+          \resumeItemListStart
+            \resumeItem{Developed Exeatlog, a web-based application for real-time monitoring of high school exeats, leveraging PHP for robust backend infrastructure and efficient data processing.}
+            \resumeItem{Optimized a MySQL database to efficiently manage high-volume data, ensuring smooth operation for a large student body.}
+            \resumeItem{Created a user-friendly interface using Bootstrap, CSS, and JavaScript, enhancing user experience through responsive and intuitive design.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------LEADERSHIP-----------
+\section{LEADERSHIP}
+ \resumeSubHeadingListStart
+
+ \resumeProjectHeading
+          {\href{https://www.domitech.co/}{\textcolor{blue}{\underline{\textbf{Domi Technologies}}}} $|$ \emph{Co-Founder and CTO }}{May 2019 - Present}
+          \resumeItemListStart
+            \resumeItem{Led tutorial sessions on front-end web development fundamentals for high school graduates in Ghana}
+            \resumeItem{Supervise freelance web-dev projects with a focus on project management, client communication, and technical guidance to deliver high-quality web solutions}
+
+          \resumeItemListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Frameworks}{: Python, Dart, SQL, JavaScript, C/C++, PHP, Flutter, Flask, Laravel, Bootstrap} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, Visual Studio Code, PyCharm, IntelliJ, Eclipse} \\
+
+
+
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
