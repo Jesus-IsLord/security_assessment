@@ -4,17 +4,14 @@ import matplotlib.pyplot as plt
 import json
 import os
 
-# File to store user data
-USER_DATA_FILE = "user_data.json"
 
-# Function to load user data
 def load_user_data():
     if os.path.exists(USER_DATA_FILE):
         with open(USER_DATA_FILE, 'r') as file:
             return json.load(file)
     return {}
 
-# Function to save user data
+
 def save_user_data(data):
     with open(USER_DATA_FILE, 'w') as file:
         json.dump(data, file)
@@ -53,13 +50,11 @@ def start_assessment(category, username):
     responses = []
     question_index = 0  # Initialize question index
 
-    # Assessment window to hold questions
     assessment_window = tk.Toplevel()
     assessment_window.title(f"{category} Assessment")
     assessment_window.geometry("500x400")
     assessment_window.configure(bg="#ffffff")
 
-    # Define questions for each category
     questions_dict = {
         'Password Management': [
             "Do you use unique passwords for each of your accounts?",
@@ -112,7 +107,6 @@ def start_assessment(category, username):
         question_index += 1
         ask_question()  # Ask the next question
 
-    # Create UI elements for assessment
     question_label = tk.Label(assessment_window, text="", bg="#ffffff", font=("Arial", 14), wraplength=450)
     question_label.pack(pady=20)
 
